@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up to Deakin Newsletter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #45bfca;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .signup-container {
+            background-color: #ffffff;
+            padding: 40px 60px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .signup-container h1 {
+            margin-bottom: 30px;
+            font-size: 24px;
+            color: #333333;
+        }
+
+        .signup-form .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .signup-form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333333;
+        }
+
+        .signup-form input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #bb4c4c;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333333;
+        }
+
+        .signup-form input:focus {
+            border-color: #78b2ec;
+            outline: none;
+        }
+
+        .signup-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #78b2ec;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .signup-form button:hover {
+            background-color: #56ec4b;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h1>Sign Up to Deakin Newsletter</h1>
+        <form class="signup-form" action="/" method="POST">
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="Email">Email:</label>
+                <input type="email" id="Email" name="Email" required>
+            </div>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</body>
+</html>
